@@ -1,12 +1,17 @@
 @import "trix";
 
-.trix-content ul li, .trix-content ol li, .trix-content li li
-  margin-left: 2em
+.trix-content ul li, .trix-content ol li, .trix-content li li {
+  margin-left: 2em;
+}
 
-ul li, ol li, li li
-  margin-left: 2em
+ul li, ol li, li li {
+  margin-left: 2em;
+}
 
-ul
-  list-style-type: disc
-ol
-  list-style-type: decimal
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}

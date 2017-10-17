@@ -1,22 +1,25 @@
 # Administrate::Field::Trix
 
-A plugin to use the Trix WYSIWYG editor within in [Administrate].
+A plugin to use the [Trix] WYSIWYG editor within in [Administrate].
 
-## Usage
+## Install
 
-Add it to your `Gemfile`:
+Add `administrate-field-trix` and `trix` to your `Gemfile`:
 
 ```ruby
-gem 'administrate-field-trix, '~> 0.0.1'
+gem 'administrate-field-trix'
+gem 'trix'
 ```
 
-Run:
+Install:
 
 ```bash
 $ bundle install
 ```
 
-Add to your `FooDashboard`:
+## Usage
+
+Add a WYSIWYG field to your `FooDashboard`:
 
 ```ruby
 ATTRIBUTE_TYPES = {
@@ -28,5 +31,6 @@ ATTRIBUTE_TYPES = {
 
 `Administrate::Field::Trix` is maintained by [headway].
 
+[Trix]: http://trix-editor.org/
 [Administrate]: https://github.com/thoughtbot/administrate
 [headway]: https://headway.io
