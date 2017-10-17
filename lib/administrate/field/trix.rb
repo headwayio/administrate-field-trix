@@ -7,6 +7,9 @@ module Administrate
       def to_s
         data
       end
+
+      class Engine < ::Rails::Engine
+      end
     end
   end
 end
