@@ -4,11 +4,13 @@ require 'rails'
 module Administrate
   module Field
     class Trix < Administrate::Field::Base
-      def to_s
-        data
+      class Engine < ::Rails::Engine
+        Administrate::Engine.add_javascript 'administrate-field-trix/application'
+        Administrate::Engine.add_stylesheet 'administrate-field-trix/application'
       end
 
-      class Engine < ::Rails::Engine
+      def to_s
+        data
       end
     end
   end
