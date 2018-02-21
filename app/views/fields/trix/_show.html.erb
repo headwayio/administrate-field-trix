@@ -1,1 +1,1 @@
-<%= truncate(field.to_s, length: 250) %>
+<%= sanitize(field.to_s, attributes: %w(style)) %>
