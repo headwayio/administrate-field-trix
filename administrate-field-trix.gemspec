@@ -2,7 +2,7 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-trix'
-  gem.version = '0.1.5'
+  gem.version = '0.1.6'
   gem.authors = ['Noah Settersten']
   gem.email = ['noah@headway.io']
   gem.homepage = 'https://github.com/headwayio/administrate-field-trix'
