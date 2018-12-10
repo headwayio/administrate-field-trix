@@ -1,1 +1,5 @@
-<%= sanitize(field.to_s, attributes: %w(style)) %>
+<%- if field.sanitize? %>
+  <%= sanitize(field.to_s, attributes: %w(style)) %>
+<% else %>
+  <%= field.to_s.html_safe %>
+<% end %>

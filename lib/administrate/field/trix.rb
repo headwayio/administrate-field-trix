@@ -12,6 +12,10 @@ module Administrate
       def to_s
         data
       end
+
+      def sanitize?
+        options.fetch(:sanitize, true)
+      end
     end
   end
 end
